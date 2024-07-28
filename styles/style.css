@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --cor-primaria: #A6CDD2;
+    --cor-secundaria: #346E8F;
+    --cor-primaria-degrade: #FF9F47;
+    --cor-secundaria-degrade: #FFC700;
+    --fonte-padrao: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration-line: none;
+}
+
+.conteudo{
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-padrao);
+}
+
+.container{
+    display: flex;
+    margin: 100px;
+    align-items: center;
+    text-align: center;
+    gap: 56px;
+    justify-content: space-around;
+}
+
+.container__anuncio__h1{
+    font-size: 126px;
+    color: var(--cor-secundaria);
+}
+
+.container__anuncio__h2{
+    font-size: 41.1px;
+    color: var(--cor-secundaria);
+}
+
+.container__anuncio__img{
+    width: 374px;
+}
+
+.container__anuncio__botao{
+    width: 192px;
+    height: 88px;
+    background-image: linear-gradient(to top, var(--cor-primaria-degrade), var(--cor-secundaria-degrade));
+    border: none;
+    outline: none;
+    border-radius: 64px;
+    margin-top: 72px;
+}
+
+.container__anuncio__botao:hover{
+cursor: pointer;
+}
+
+@media (max-width: 995px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container__anuncio__h1{
+        font-size: 70px;
+        color: var(--cor-secundaria);
+    }
+    
+    .container__anuncio__h2{
+        font-size: 21.1px;
+        color: var(--cor-secundaria);
+    }
+    
+    .container__anuncio__img{
+        width: 174px;
+    }
+}
